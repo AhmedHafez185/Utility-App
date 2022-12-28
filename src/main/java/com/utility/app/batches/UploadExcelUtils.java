@@ -1,4 +1,4 @@
-package com.utility.app.csv_reader;
+package com.utility.app.batches;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;

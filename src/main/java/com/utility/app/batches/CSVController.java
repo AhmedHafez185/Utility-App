@@ -1,4 +1,4 @@
-package com.utility.app.csv_reader;
+package com.utility.app.batches;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +18,7 @@ public class CSVController {
     @Autowired
     CSVReaderService csvReader;
 @Autowired
-ExcelService excelService;
+ExcelReaderService excelService;
     @PostMapping("upload")
     public ResponseEntity<String> uploadCSVFile(@RequestParam("file") MultipartFile patchFile) throws Exception {
         if (!patchFile.isEmpty()) {
